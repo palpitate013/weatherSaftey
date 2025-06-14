@@ -4,12 +4,19 @@ set -e
 echo "=== WeatherSaftey ==="
 
 # Ask for config values
-read -p "Enter your OpenWeatherMap API Key: " API_KEY
-read -p "Enter your latitude (e.g. 35.2271): " LAT
-read -p "Enter your longitude (e.g. -80.8431): " LON
-read -p "Enter your ntfy topic name (e.g. storm-alert): " TOPIC
-read -p "Enter the hostname of the PC to wake: " HOSTNAME
-read -p "Enter the MAC address of the PC to wake (e.g. AA:BB:CC:DD:EE:FF): " MAC
+echo "Enter your OpenWeatherMap API Key:"
+read API_KEY
+echo "Enter your latitude (e.g. 35.2271):"
+read LAT
+echo "Enter your longitude (e.g. -80.8431):"
+read LON
+echo "Enter your ntfy topic name (e.g. storm-alert):"
+read TOPIC
+echo "Enter the hostname of the PC to wake:"
+read HOSTNAME
+echo "Enter the MAC address of the PC to wake (e.g. AA:BB:CC:DD:EE:FF):"
+read MAC
+
 
 # Install wakeonlan
 if ! command -v wakeonlan &> /dev/null; then
