@@ -53,13 +53,13 @@ After installation, edit the `config.json` file generated in the project folder 
 ### ❌ On the PC:
 
 ```bash
-curl -sS https://raw.githubusercontent.com/your-username/stormshield/main/uninstall_pc.sh | bash
+curl -sS https://raw.githubusercontent.com/palpitate013/weatherSaftey/refs/heads/main/uninstall_pc.sh | bash
 ```
 
 ### ❌ On the Raspberry Pi:
 
 ```bash
-curl -sS https://raw.githubusercontent.com/your-username/stormshield/main/uninstall_pi.sh | bash
+curl -sS https://raw.githubusercontent.com/palpitate013/weatherSaftey/refs/heads/main/uninstall_pi.sh | bash
 ```
 
 You can also delete `config.json` manually if you want to remove saved credentials and preferences.
